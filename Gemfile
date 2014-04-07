@@ -31,6 +31,9 @@ gem 'jbuilder', '~> 1.2'
 # For deploying on heroku
 gem 'rails_12factor', group: :production
 
+# Unicorn for more workers per dyno
+gem "unicorn", "~> 4.8.2"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
