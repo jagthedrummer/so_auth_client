@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 1.2'
 # For deploying on heroku
 gem 'rails_12factor', group: :production
 
+gem 'so_auth'
+
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
 
