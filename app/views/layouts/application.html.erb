@@ -8,11 +8,17 @@
 </head>
 <body>
 
-<h1><%= link_to "SoAuthClient", root_path %></h1>
-<%= link_to "Provider", ENV['AUTH_PROVIDER_URL'] %>
-<hr />
+<div class="header">
+  <%= link_to image_tag('rails.png'), root_path %>
+  <h1><%= link_to "SoAuthClient", root_path %></h1>
+  <h2><%= link_to "Go to the Provider", ENV['AUTH_PROVIDER_URL'] %></h2>
+  <hr />
+</div>
 
 <%= yield %>
+
+<hr />
+<h3><%= request.original_url %></h3>
 
 </body>
 </html>
