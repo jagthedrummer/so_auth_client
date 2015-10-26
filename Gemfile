@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 1.2'
 # For deploying on heroku
 gem 'rails_12factor', group: :production
 
-gem 'so_auth'
+gem 'so_auth'#, :path => "../so_auth"
 
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
@@ -53,4 +53,4 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 #
-ruby "2.1.0"
+ruby "2.2.2"
