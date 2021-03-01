@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.3'
+gem 'responders', '~> 2.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -35,6 +36,10 @@ gem 'so_auth'#, :path => "../so_auth"
 
 # Unicorn for more workers per dyno
 gem "unicorn", "~> 4.8.2"
+
+group :development do
+  gem 'foreman'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
